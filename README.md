@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ClipAIF - AI Content Intelligence Platform
 
-## Getting Started
+ClipAIF adalah platform SaaS modern yang dirancang untuk membantu kreator konten menemukan niche viral, srtategi konten, dan mengoptimalkan pertumbuhan media sosial menggunakan kecerdasan buatan.
 
-First, run the development server:
+## 🚀 Fitur Utama
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Niche Discovery**: Analisis data real-time untuk menemukan topik yang sedang tren.
+- **AI Clip Generator**: Mengubah video panjang menjadi klip pendek viral secara otomatis.
+- **History Tracking**: Pantau semua proses rendering dan unduh hasil video Anda.
+- **Admin Dashboard**: Monitoring sistem kesehatan (DB, Redis, Celery) dan manajemen kredit user.
+
+## 🛠️ Persiapan Lingkungan (Environment)
+
+Buat file `.env.local` di root direktori dan tambahkan variabel berikut:
+
+```env
+NEXT_PUBLIC_API_URL=http://your-backend-api.com
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📦 Panduan Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Ikuti langkah-langkah berikut untuk menjalankan ClipAIF di lingkungan produksi:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. Instalasi Dependensi
+Pastikan Anda telah menginstal semua library yang diperlukan:
+```bash
+npm install
+```
 
-## Learn More
+### 2. Membangun Aplikasi (Build)
+Next.js akan melakukan optimasi aset dan membuat bundle produksi:
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 3. Menjalankan Server Produksi
+Setelah proses build selesai, jalankan server dengan perintah:
+```bash
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 SEO & Media
+Aplikasi ini sudah dikonfigurasi dengan:
+- **Global Metadata**: OpenGraph & Twitter Cards untuk preview link yang menarik.
+- **Remote Patterns**: Dukungan render gambar dari YouTube dan Pexels.
+- **Responsive Design**: Optimal untuk Desktop, Tablet, dan Mobile.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 Lisensi
+Proprietary - ClipAIF Team

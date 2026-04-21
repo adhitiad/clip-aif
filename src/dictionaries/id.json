@@ -1,0 +1,99 @@
+{
+  "common": {
+    "save": "Simpan",
+    "cancel": "Batal",
+    "process": "Proses",
+    "loading": "Memuat...",
+    "actions": "Aksi"
+  },
+  "navigation": {
+    "dashboard": "Dasbor",
+    "niche": "Temukan Niche",
+    "generator": "Pembuat Klip",
+    "tools": "Alat AI",
+    "history": "Riwayat",
+    "settings": "Pengaturan",
+    "referral": "Referral",
+    "admin": "Panel Admin"
+  },
+  "dashboard": {
+    "overview": "Ringkasan",
+    "welcome": "Selamat datang kembali",
+    "stats": {
+      "credits": "Kredit Tersedia",
+      "total_videos": "Total Video",
+      "active_tasks": "Tugas Aktif",
+      "total_users": "Total Pengguna",
+      "active_subs": "Langganan Aktif",
+      "total_clips": "Total Klip Dibuat",
+      "revenue": "Pendapatan (Est.)",
+      "engagement": "Tingkat Engagement",
+      "account_status": "Status Akun"
+    },
+    "owner_desc": "Monitor performa platform ClipAIF hari ini.",
+    "user_desc": "Lanjutkan pembuatan konten AI viral Anda.",
+    "recent_history": "Riwayat Klip Terbaru",
+    "recent_desc": "Daftar 5 video terakhir yang Anda buat.",
+    "no_clips": "Belum ada klip yang dibuat. Mulai buat sekarang!",
+    "gods_mode": "Akses Gods Mode",
+    "gods_desc": "Anda memiliki otoritas penuh atas infrastruktur ClipAIF.",
+    "manage_platform": "Kelola Platform",
+    "plan": "Paket",
+    "fitur_lengkap": "Fitur lengkap aktif",
+    "upgrade_pro": "Upgrade untuk fitur pro",
+    "error_fetch": "Gagal mengambil data dasbor."
+  },
+  "generator": {
+    "title": "AI Clip Generator",
+    "desc": "Ubah video panjang menjadi klip pendek yang viral menggunakan AI.",
+    "source": "Sumber Video",
+    "source_desc": "Masukkan URL YouTube atau unggah file video Anda.",
+    "url_label": "URL YouTube",
+    "fetch": "Ambil",
+    "ai_settings": "Pengaturan AI",
+    "advanced_ai": "AI Canggih",
+    "moment_title": "Auto-Trim Viral Moments",
+    "moment_desc": "AI akan mendeteksi bagian paling menarik secara otomatis.",
+    "caption_title": "Smart Captions",
+    "caption_desc": "Generate subtitle dinamis dengan gaya Alex Hormozi.",
+    "start": "Mulai Buat Klip",
+    "preparing": "Mempersiapkan...",
+    "export_options": "Opsi Ekspor",
+    "aspect_ratio": "Rasio Aspek Video",
+    "error_no_url": "Silakan masukkan URL video terlebih dahulu.",
+    "success_task": "Task berhasil dikirim ke antrean Celery!",
+    "error_task": "Gagal memulai proses generation."
+  },
+  "history": {
+    "title": "Riwayat Klip",
+    "desc": "Kelola dan lihat kembali video klip yang telah Anda buat.",
+    "refresh": "Perbarui",
+    "empty": "Gagal memuat riwayat klip.",
+    "processing_info": "Video masih dalam proses."
+  },
+  "referral": {
+    "title": "Program Afiliasi",
+    "desc": "Undang teman Anda dan dapatkan kredit gratis untuk setiap pendaftaran baru.",
+    "share_title": "Bagikan Link Anda",
+    "share_desc": "Setiap teman yang mendaftar menggunakan link ini akan memberi Anda 50 kredit tambahan secara otomatis.",
+    "your_code": "Kode Referral Anda",
+    "copied": "Tersalin",
+    "copy_link": "Salin Link",
+    "share_to": "Bagikan langsung ke:",
+    "success_copy": "Link referral berhasil disalin!",
+    "total_referred": "Teman yang Terundang",
+    "total_referred_desc": "Total pengguna baru dari link Anda",
+    "credits_earned": "Total Penghasilan Kredit",
+    "credits_earned_desc": "Kredit gratis didapatkan dari referral",
+    "share_message": "Gabung di ClipAIF dan dapatkan kemudahan membuat konten viral!"
+  },
+  "settings": {
+    "title": "Pengaturan",
+    "desc": "Kelola akun, preferensi aplikasi, dan paket langganan Anda.",
+    "profile": "Profil",
+    "billing": "Billing & Paket",
+    "app": "Pengaturan Aplikasi",
+    "notifications": "Notifikasi",
+    "coming_soon": "Segera hadir."
+  }
+}

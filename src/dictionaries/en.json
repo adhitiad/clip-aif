@@ -1,0 +1,99 @@
+{
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "process": "Process",
+    "loading": "Loading...",
+    "actions": "Actions"
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "niche": "Niche Discovery",
+    "generator": "Clip Generator",
+    "tools": "AI Tools",
+    "history": "History",
+    "settings": "Settings",
+    "referral": "Referral",
+    "admin": "Admin Panel"
+  },
+  "dashboard": {
+    "overview": "Overview",
+    "welcome": "Welcome back",
+    "stats": {
+      "credits": "Available Credits",
+      "total_videos": "Total Videos",
+      "active_tasks": "Active Tasks",
+      "total_users": "Total Users",
+      "active_subs": "Active Subscriptions",
+      "total_clips": "Total Clips Generated",
+      "revenue": "Revenue (Est.)",
+      "engagement": "Engagement Rate",
+      "account_status": "Account Status"
+    },
+    "owner_desc": "Monitor ClipAIF platform performance today.",
+    "user_desc": "Continue creating your viral AI content.",
+    "recent_history": "Recent Clip History",
+    "recent_desc": "List of the last 5 videos you created.",
+    "no_clips": "No clips created yet. Start creating now!",
+    "gods_mode": "Gods Mode Access",
+    "gods_desc": "You have full authority over the ClipAIF infrastructure.",
+    "manage_platform": "Manage Platform",
+    "plan": "Plan",
+    "fitur_lengkap": "Full features active",
+    "upgrade_pro": "Upgrade for pro features",
+    "error_fetch": "Failed to fetch dashboard data."
+  },
+  "generator": {
+    "title": "AI Clip Generator",
+    "desc": "Turn long videos into viral short clips using AI.",
+    "source": "Video Source",
+    "source_desc": "Enter a YouTube URL or upload your video file.",
+    "url_label": "YouTube URL",
+    "fetch": "Fetch",
+    "ai_settings": "AI Settings",
+    "advanced_ai": "Advanced AI",
+    "moment_title": "Auto-Trim Viral Moments",
+    "moment_desc": "AI will automatically detect the most engaging parts.",
+    "caption_title": "Smart Captions",
+    "caption_desc": "Generate dynamic subtitles in Alex Hormozi style.",
+    "start": "Start Generating Clips",
+    "preparing": "Preparing...",
+    "export_options": "Export Options",
+    "aspect_ratio": "Video Aspect Ratio",
+    "error_no_url": "Please enter a video URL first.",
+    "success_task": "Task successfully sent to Celery queue!",
+    "error_task": "Failed to start generation process."
+  },
+  "history": {
+    "title": "Clip History",
+    "desc": "Manage and revisit the video clips you've created.",
+    "refresh": "Refresh",
+    "empty": "Failed to load clip history.",
+    "processing_info": "Video is still processing."
+  },
+  "referral": {
+    "title": "Affiliate Program",
+    "desc": "Invite your friends and earn free credits for every new registration.",
+    "share_title": "Share Your Link",
+    "share_desc": "Each friend who signs up using this link will automatically give you 50 extra credits.",
+    "your_code": "Your Referral Code",
+    "copied": "Copied",
+    "copy_link": "Copy Link",
+    "share_to": "Share directly to:",
+    "success_copy": "Referral link copied successfully!",
+    "total_referred": "Referred Friends",
+    "total_referred_desc": "Total new users from your link",
+    "credits_earned": "Total Credits Earned",
+    "credits_earned_desc": "Free credits earned from referrals",
+    "share_message": "Join ClipAIF and get the ease of creating viral content!"
+  },
+  "settings": {
+    "title": "Settings",
+    "desc": "Manage your account, app preferences, and subscription plan.",
+    "profile": "Profile",
+    "billing": "Billing & Plan",
+    "app": "App Settings",
+    "notifications": "Notifications",
+    "coming_soon": "Coming soon."
+  }
+}
