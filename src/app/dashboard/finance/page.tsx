@@ -136,9 +136,9 @@ export default function FinancePage() {
            </CardHeader>
            <CardContent>
              <div className="text-3xl font-black">{formatRupiah(summary?.total_income || 0)}</div>
-             <p className="text-xs mt-1 text-emerald-100 flex items-center gap-1">
+             <div className="text-xs mt-1 text-emerald-100 flex items-center gap-1">
                <Badge className="bg-white/20 hover:bg-white/30 text-[10px] h-4">Gross Revenue</Badge>
-             </p>
+             </div>
            </CardContent>
         </Card>
 
@@ -153,9 +153,9 @@ export default function FinancePage() {
            </CardHeader>
            <CardContent>
              <div className="text-3xl font-black">{formatRupiah(summary?.total_expense || 0)}</div>
-             <p className="text-xs mt-1 text-rose-100 flex items-center gap-1">
+             <div className="text-xs mt-1 text-rose-100 flex items-center gap-1">
                <Badge className="bg-white/20 hover:bg-white/30 text-[10px] h-4">Operational Costs</Badge>
-             </p>
+             </div>
            </CardContent>
         </Card>
 
@@ -170,9 +170,9 @@ export default function FinancePage() {
            </CardHeader>
            <CardContent>
              <div className="text-3xl font-black">{formatRupiah(summary?.net_profit || 0)}</div>
-             <p className="text-xs mt-1 text-indigo-100 flex items-center gap-1">
+             <div className="text-xs mt-1 text-indigo-100 flex items-center gap-1">
                <Badge className="bg-white/20 hover:bg-white/30 text-[10px] h-4">Post-Expense Profit</Badge>
-             </p>
+             </div>
            </CardContent>
         </Card>
       </div>
