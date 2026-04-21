@@ -182,3 +182,50 @@ export interface ApiResponse<T = any> {
   message?: string;
   success?: boolean;
 }
+
+// Investment types
+export interface InvestmentStatus {
+  valuation: number;
+  founder_share: number;
+  investors_share: number;
+  available_share: number;
+  total_funding_target: number;
+  total_collected: number;
+}
+
+export interface InvestmentBuyRequest {
+  invest_amount: number;
+}
+
+// Finance types
+export interface FinanceTransaction {
+  id: number;
+  created_at: string;
+  type: "income" | "expense";
+  category: string;
+  amount: number;
+  description: string | null;
+}
+
+export interface FinanceSummary {
+  total_income: number;
+  total_expense: number;
+  net_profit: number;
+  recent_transactions: FinanceTransaction[];
+}
+
+export interface FinanceRecordRequest {
+  type: "income" | "expense";
+  category: string;
+  amount: number;
+  description: string;
+}
+
+export interface Shareholder {
+  id: string;
+  email: string;
+  role: string;
+  plan: string;
+  invested_amount: number;
+  ownership_percentage: number;
+}

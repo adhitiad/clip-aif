@@ -1,16 +1,29 @@
 "use client";
 
-import { useState } from "react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
-import { Checkbox } from "@/components/ui/checkbox";
 import { Progress } from "@/components/ui/progress";
-import { Badge } from "@/components/ui/badge";
-import { Sparkles, TrendingUp, AlertCircle, CheckCircle2, Info, Loader2 } from "lucide-react";
+import { Textarea } from "@/components/ui/textarea";
 import axiosInstance from "@/lib/axios";
+import {
+  AlertCircle,
+  CheckCircle2,
+  Info,
+  Loader2,
+  Sparkles,
+  TrendingUp,
+} from "lucide-react";
+import { useState } from "react";
 import { toast } from "sonner";
 
 export function ViralPredictorTool() {
@@ -40,8 +53,10 @@ export function ViralPredictorTool() {
       // Mock result for demo
       setResult({
         score: 7.8,
-        recommendation: "Gunakan hook yang lebih kuat di 3 detik pertama. Tambahkan musik yang sedang tren.",
-        viral_factor: "Topik ini sedang naik daun di kategori 'Self Improvement'.",
+        recommendation:
+          "Gunakan hook yang lebih kuat di 3 detik pertama. Tambahkan musik yang sedang tren.",
+        viral_factor:
+          "Topik ini sedang naik daun di kategori 'Self Improvement'.",
       });
     } finally {
       setIsLoading(false);
@@ -55,7 +70,8 @@ export function ViralPredictorTool() {
   };
 
   const getScoreIcon = (score: number) => {
-    if (score >= 6.5) return <CheckCircle2 className="w-5 h-5 text-green-400" />;
+    if (score >= 6.5)
+      return <CheckCircle2 className="w-5 h-5 text-green-400" />;
     return <AlertCircle className="w-5 h-5 text-orange-400" />;
   };
 
@@ -79,7 +95,9 @@ export function ViralPredictorTool() {
               id="title"
               placeholder="Masukkan judul menarik..."
               value={formData.title}
-              onChange={(e) => setFormData({ ...formData, title: e.target.value })}
+              onChange={(e) =>
+                setFormData({ ...formData, title: e.target.value })
+              }
               className="bg-background/50 border-white/10"
             />
           </div>
@@ -90,7 +108,9 @@ export function ViralPredictorTool() {
               id="description"
               placeholder="Deskripsikan isi video atau rekam script..."
               value={formData.description}
-              onChange={(e) => setFormData({ ...formData, description: e.target.value })}
+              onChange={(e) =>
+                setFormData({ ...formData, description: e.target.value })
+              }
               className="bg-background/50 border-white/10 min-h-[100px]"
             />
           </div>
@@ -102,7 +122,12 @@ export function ViralPredictorTool() {
                 id="duration"
                 type="number"
                 value={formData.duration}
-                onChange={(e) => setFormData({ ...formData, duration: parseInt(e.target.value) })}
+                onChange={(e) =>
+                  setFormData({
+                    ...formData,
+                    duration: parseInt(e.target.value),
+                  })
+                }
                 className="bg-background/50 border-white/10"
               />
             </div>
@@ -110,7 +135,9 @@ export function ViralPredictorTool() {
               <Checkbox
                 id="broll"
                 checked={formData.has_broll}
-                onCheckedChange={(checked) => setFormData({ ...formData, has_broll: !!checked })}
+                onCheckedChange={(checked) =>
+                  setFormData({ ...formData, has_broll: !!checked })
+                }
               />
               <label
                 htmlFor="broll"
@@ -145,34 +172,47 @@ export function ViralPredictorTool() {
                 {getScoreIcon(result.score)}
                 <span className="font-bold text-lg">Prediksi Skor:</span>
               </div>
-              <Badge 
+              <Badge
                 className={`${getScoreColor(result.score)} text-white border-transparent`}
               >
-                {result.score >= 6.5 ? 'Potensi Tinggi' : 'Potensi Menengah'}
+                {result.score >= 6.5 ? "Potensi Tinggi" : "Potensi Menengah"}
               </Badge>
             </div>
 
             <div className="space-y-2">
               <div className="flex justify-between text-sm font-mono">
                 <span>Viral Score</span>
-                <span className="font-bold text-blue-400">{result.score}/10</span>
+                <span className="font-bold text-blue-400">
+                  {result.score}/10
+                </span>
               </div>
-              <Progress value={result.score * 10} className={`h-2 ${getScoreColor(result.score)}`} />
+              <Progress
+                value={result.score * 10}
+                className={`h-2 ${getScoreColor(result.score)}`}
+              />
             </div>
 
             <div className="pt-4 border-t border-white/5 space-y-3">
               <div className="flex gap-3">
                 <Info className="w-4 h-4 text-purple-400 shrink-0 mt-1" />
                 <div className="space-y-1">
-                  <p className="text-xs font-semibold text-purple-300">Rekomendasi AI:</p>
-                  <p className="text-xs leading-relaxed text-muted-foreground">{result.recommendation}</p>
+                  <p className="text-xs font-semibold text-purple-300">
+                    Rekomendasi AI:
+                  </p>
+                  <p className="text-xs leading-relaxed text-muted-foreground">
+                    {result.recommendation}
+                  </p>
                 </div>
               </div>
               <div className="flex gap-3">
                 <TrendingUp className="w-4 h-4 text-blue-400 shrink-0 mt-1" />
                 <div className="space-y-1">
-                  <p className="text-xs font-semibold text-blue-300">Viral Factor:</p>
-                  <p className="text-xs leading-relaxed text-muted-foreground">{result.viral_factor}</p>
+                  <p className="text-xs font-semibold text-blue-300">
+                    Viral Factor:
+                  </p>
+                  <p className="text-xs leading-relaxed text-muted-foreground">
+                    {result.viral_factor}
+                  </p>
                 </div>
               </div>
             </div>

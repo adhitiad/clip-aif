@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Sidebar } from "@/components/layout/sidebar";
-import { Navbar } from "@/components/layout/navbar";
+import { Navbar } from "@/components/layout/Navbar";
 import { cn } from "@/lib/utils";
 
 interface DashboardLayoutProps {

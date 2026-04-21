@@ -14,7 +14,9 @@
     "history": "History",
     "settings": "Settings",
     "referral": "Referral",
-    "admin": "Admin Panel"
+    "admin": "Admin Panel",
+    "finance": "Finance",
+    "investment": "Investment"
   },
   "dashboard": {
     "overview": "Overview",

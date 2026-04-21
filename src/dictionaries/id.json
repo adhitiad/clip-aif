@@ -14,7 +14,9 @@
     "history": "Riwayat",
     "settings": "Pengaturan",
     "referral": "Referral",
-    "admin": "Panel Admin"
+    "admin": "Panel Admin",
+    "finance": "Keuangan",
+    "investment": "Investasi"
   },
   "dashboard": {
     "overview": "Ringkasan",

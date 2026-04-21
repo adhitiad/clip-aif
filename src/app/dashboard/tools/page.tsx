@@ -4,7 +4,7 @@ import { DubbingTool } from "@/components/dashboard/tools/dubbing-tool";
 import { ViralPredictorTool } from "@/components/dashboard/tools/viral-predictor-tool";
 import { Laptop, Sparkles } from "lucide-react";
 
-export default function AI ToolsPage() {
+export default function AIToolsPage() {
   return (
     <div className="space-y-6 animate-in fade-in duration-500">
       <div className="flex flex-col gap-2">

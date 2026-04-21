@@ -3,7 +3,7 @@ import { useAuthStore } from "@/store/authStore";
 import { toast } from "sonner";
 
 const axiosInstance = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000",
+  baseURL: process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000",
   headers: {
     "Content-Type": "application/json",
   },

@@ -37,10 +37,10 @@ import {
 import axiosInstance from "@/lib/axios";
 
 const registerSchema = z.object({
-  username: z.string().min(3, "Username minimal 3 karakter"),
+  username: z.string().min(3, "Username minimal 3 karakter").max(30, "Username maksimal 30 karakter"),
   email: z.string().email("Masukkan alamat email yang valid"),
   password: z.string().min(6, "Password minimal 6 karakter"),
-  referral_code: z.string().optional(),
+  referral_code: z.string().optional().or(z.literal("")),
 });
 
 type RegisterFormValues = z.infer<typeof registerSchema>;

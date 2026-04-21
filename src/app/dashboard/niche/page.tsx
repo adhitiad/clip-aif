@@ -68,7 +68,7 @@ export default function NichePage() {
     try {
       setLoading(prev => ({ ...prev, search: true }));
       setError(null);
-      const res = await axiosInstance.get(`/niche/find-videos?q=${encodeURIComponent(searchQuery)}`);
+      const res = await axiosInstance.get(`/niche/find-videos?query=${encodeURIComponent(searchQuery)}`);
       setVideoResults(res.data);
     } catch (err: any) {
       setError("Gagal melakukan pencarian video. Coba lagi nanti.");

@@ -11,7 +11,9 @@ import {
   History, 
   Settings,
   X,
-  Gift
+  Gift,
+  Wallet,
+  Users2
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -72,6 +74,16 @@ export function Sidebar({ className, onClose }: SidebarProps) {
       label: t("navigation.admin"),
       icon: ShieldCheck,
       href: "/dashboard/admin",
+    },
+    {
+      label: t("navigation.finance"),
+      icon: Wallet,
+      href: "/dashboard/finance",
+    },
+    {
+      label: t("navigation.investment"),
+      icon: Users2,
+      href: "/dashboard/investment",
     },
   ];
 
