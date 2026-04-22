@@ -30,8 +30,9 @@ export function GodsMode() {
       await axiosInstance.post("/dashboard/godsmode/adjust-credits", adjustData);
       toast.success(`Berhasil menyesuaikan kredit untuk User ${adjustData.user_id}`);
       setAdjustData({ user_id: "", amount: 0, reason: "" });
-    } catch (error) {
-      toast.error("Gagal menyesuaikan kredit.");
+    } catch (error: any) {
+      const errorMessage = error.response?.data?.detail || "Gagal menyesuaikan kredit.";
+      toast.error(errorMessage);
     } finally {
       setIsAdjusting(false);
     }
@@ -42,8 +43,11 @@ export function GodsMode() {
     try {
       await axiosInstance.post("/dashboard/godsmode/retrain-viral-model");
       toast.success("Pelatihan ulang model ML Viral Predictor dimulai di background.");
-    } catch (error) {
-      toast.error("Gagal memicu pelatihan ulang model.");
+    } catch (error: any) {
+      const errorMessage = error.response?.data?.detail || "Gagal memicu pelatihan ulang model.";
+      toast.error(errorMessage, {
+        description: "Pastikan sistem memiliki data yang cukup untuk pelatihan."
+      });
     } finally {
       setIsRetraining(false);
     }
